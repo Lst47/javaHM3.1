@@ -1,12 +1,12 @@
 public class BonusMilesService {
-    public int calculate(int a) {
-        int price;
+    public int calculate(int balance) {
+        int bonus;
 
-        if (a < 1099) {
-            price = 0;
+        if (balance < 1099) {
+            bonus = 0;
         } else {
-            price = a / 100;
+            bonus = balance / 100;
         }
-        return price;
+        return bonus;
     }
 }
